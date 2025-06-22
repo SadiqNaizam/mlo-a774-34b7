@@ -1,14 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import LoginForm from '@/components/Login/LoginForm';
 
-const Index = () => {
+/**
+ * LoginPage serves as the main entry point for the user authentication flow.
+ * It utilizes a centered layout to prominently display the LoginForm component.
+ * The background color is inherited from the body styles defined in global CSS.
+ */
+const LoginPage: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    // This main container implements the CenteredFormLayout template requirements.
+    // It uses flexbox to center the LoginForm component vertically and horizontally
+    // within the full viewport height.
+    <main className="flex h-screen w-full items-center justify-center bg-background">
+      <LoginForm />
+    </main>
   );
 };
 
-export default Index;
+export default LoginPage;
