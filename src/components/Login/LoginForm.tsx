@@ -74,7 +74,7 @@ const LoginForm: React.FC = () => {
                       type="email"
                       placeholder=" "
                       className={cn(
-                        'peer h-10 w-full border-b border-gray-300 bg-transparent p-0 text-card-foreground shadow-none rounded-none',
+                        'peer h-10 w-full border-b border-border bg-transparent p-0 text-card-foreground shadow-none rounded-none',
                         'focus:border-primary focus-visible:ring-0 focus-visible:ring-offset-0'
                       )}
                       {...field}
@@ -101,7 +101,7 @@ const LoginForm: React.FC = () => {
                       type="password"
                       placeholder=" "
                       className={cn(
-                        'peer h-10 w-full border-b border-gray-300 bg-transparent p-0 text-card-foreground shadow-none rounded-none',
+                        'peer h-10 w-full border-b border-border bg-transparent p-0 text-card-foreground shadow-none rounded-none',
                         'focus:border-primary focus-visible:ring-0 focus-visible:ring-offset-0'
                       )}
                       {...field}
